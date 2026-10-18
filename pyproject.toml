@@ -1,0 +1,26 @@
+[project]
+name = "pc-optimizer-pro"
+version = "1.0.0"
+description = "Автономная оптимизация ПК под Windows: очистка мусора, питание, процессы, дефрагментация HDD, драйверы"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "PyYAML>=6.0",
+    "psutil>=5.9",
+    "scheduler>=0.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+pc-optimizer = "src.main:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+namespaces = false

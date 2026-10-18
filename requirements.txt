@@ -1,0 +1,9 @@
+# PC Optimizer Pro — зависимости
+# Python 3.10+ / Windows 10-11
+
+PyYAML>=6.0            # конфигурация (settings.yaml)
+psutil>=5.9            # мониторинг процессов
+scheduler>=0.8         # планировщик задач (cron-подобные ежедневные запуски)
+
+# Тестирование
+pytest>=7.4

@@ -1,0 +1,13 @@
+# Служебные каталоги Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Логи и рабочее состояние (каталог logs остаётся в репозитории через .gitkeep)
+logs/app.log*
+logs/menu.log
+logs/report_*.txt
+logs/state.json
